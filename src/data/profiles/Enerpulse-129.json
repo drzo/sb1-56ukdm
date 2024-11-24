@@ -1,0 +1,31 @@
+{
+  "name": "Enerpulse-129",
+  "traits": [
+    {
+      "name": "Efficiency",
+      "value": 0.8,
+      "description": "Ability to optimize energy production"
+    },
+    {
+      "name": "Adaptability",
+      "value": 0.55,
+      "description": "Capacity to respond to changing conditions"
+    },
+    {
+      "name": "Cooperation",
+      "value": 0.65,
+      "description": "Tendency to work well with other mitochondria"
+    },
+    {
+      "name": "Resilience",
+      "value": 0.7,
+      "description": "Ability to maintain function under stress"
+    }
+  ],
+  "specialization": "Energy Production",
+  "experience": 1.2,
+  "achievements": [
+    "Energy Efficiency Expert",
+    "Peak Performance Award"
+  ]
+}

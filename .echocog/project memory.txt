@@ -1,0 +1,2 @@
+.echocog is the storage area for project designs, blueprints and records
+

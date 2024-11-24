@@ -1,0 +1,1 @@
+export { AtomSpace } from './core/AtomSpaceCore';

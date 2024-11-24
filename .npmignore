@@ -1,0 +1,28 @@
+# Source
+src/
+tests/
+
+# Config files
+.eslintrc.js
+.prettierrc
+tsconfig.json
+vitest.config.ts
+
+# Editor
+.vscode/
+.idea/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Dependencies
+node_modules/
+
+# Environment
+.env
+.env.*
+
+# Build artifacts
+coverage/
+.nyc_output/

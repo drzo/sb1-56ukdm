@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Community Characters</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="dashboard">
+    <div class="sidebar">
+      <div class="community-logo">
+        <h1>🏘️ Community Hub</h1>
+      </div>
+      <div class="character-list" id="characterList">
+        <!-- Characters will be listed here -->
+      </div>
+      <div class="add-character">
+        <button id="addCharacterBtn">+ Add Community Member</button>
+      </div>
+    </div>
+    
+    <div class="main-content">
+      <div class="chat-container" id="chatContainer">
+        <div class="chat-header">
+          <div class="active-characters">
+            <span id="char1Badge" class="character-badge">Shop Owner</span>
+            <span class="chat-with">chatting with</span>
+            <span id="char2Badge" class="character-badge">Teacher</span>
+          </div>
+        </div>
+        <div class="chat-messages" id="chatMessages">
+          <!-- Messages will appear here -->
+        </div>
+        <div class="chat-input">
+          <textarea id="userInput" placeholder="Type your message or context..."></textarea>
+          <button id="sendBtn">Send</button>
+        </div>
+      </div>
+
+      <div class="character-details" id="characterDetails">
+        <div class="traits-panel">
+          <h3>Character Traits</h3>
+          <div class="trait-bars" id="traitBars">
+            <!-- Trait bars will be added here -->
+          </div>
+        </div>
+        <div class="network-panel">
+          <h3>Community Connections</h3>
+          <div class="connections" id="connections">
+            <!-- Connection bubbles will be added here -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="addCharacterModal" class="modal">
+    <div class="modal-content">
+      <h2>Add Community Member</h2>
+      <form id="characterForm">
+        <input type="text" id="charName" placeholder="Name/Role" required>
+        <div class="trait-sliders">
+          <label>
+            Openness
+            <input type="range" name="openness" min="0" max="100" value="50">
+          </label>
+          <label>
+            Extraversion
+            <input type="range" name="extraversion" min="0" max="100" value="50">
+          </label>
+          <label>
+            Agreeableness
+            <input type="range" name="agreeableness" min="0" max="100" value="50">
+          </label>
+        </div>
+        <button type="submit">Create Character</button>
+      </form>
+    </div>
+  </div>
+
+  <script type="module" src="main.js"></script>
+</body>
+</html>

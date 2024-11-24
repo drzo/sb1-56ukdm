@@ -1,0 +1,2 @@
+.dtecho is the storage area for personal memories and context
+

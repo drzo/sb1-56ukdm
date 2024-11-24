@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Community Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="dark:bg-gray-900">
+  <div class="dashboard">
+    <div class="dashboard-grid">
+      <!-- Main Content -->
+      <div class="main-content">
+        <!-- Reservoir Section -->
+        <div class="card">
+          <div class="card-header">
+            <h2 class="card-title">Reservoir Computing</h2>
+          </div>
+          <div id="reservoirViz" class="h-[400px] bg-gray-50 dark:bg-gray-900 rounded-lg p-4">
+            <!-- D3 visualization will be rendered here -->
+          </div>
+        </div>
+
+        <!-- Characters Section -->
+        <div class="card">
+          <div class="card-header">
+            <h2 class="card-title">Community Characters</h2>
+            <button id="addCharacterBtn" class="px-4 py-2 bg-blue-500 text-white rounded-md">
+              Add Character
+            </button>
+          </div>
+          <div id="characterList" class="space-y-4">
+            <!-- Character items will be rendered here -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Sidebar -->
+      <div class="sidebar">
+        <!-- Network Status -->
+        <div class="card">
+          <h3 class="text-lg font-medium mb-4 dark:text-white">Network Status</h3>
+          <div id="networkStatus" class="space-y-2">
+            <!-- Network status will be rendered here -->
+          </div>
+        </div>
+
+        <!-- Recent Activity -->
+        <div class="card">
+          <h3 class="text-lg font-medium mb-4 dark:text-white">Recent Activity</h3>
+          <div id="activityFeed" class="space-y-2">
+            <!-- Activity items will be rendered here -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Template -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <!-- Modal content will be dynamically inserted -->
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script type="module" src="main.js"></script>
+</body>
+</html>
